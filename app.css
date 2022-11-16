@@ -1,0 +1,22 @@
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: auto;
+    width: 50%;
+    max-width: 600px;
+    ;
+}
