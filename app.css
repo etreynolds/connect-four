@@ -1,24 +1,28 @@
 body {
-    background-color: lightblue;
+    background-color: #a8dadc;
+    text-align: center;
 }
 
 h1 {
     width: 100%;
     height: 75px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline;
     margin: auto;
     font-family: 'Audiowide', cursive;
+    color: #1d3557;
+    border: 4px solid #457b9d;
+    border-radius: 15px;
+    padding: 20px;
+    line-height: 4;
 }
 
-p {
+#instructions {
     position: relative;
-    text-align: center;
     padding: 10px;
     margin: auto;
     width: 50%;
     max-width: 800px;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.2rem;
+    color: #1d3557
 }

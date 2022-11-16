@@ -16,13 +16,18 @@
 </head>
 
 <body>
-    <h1>Let's Play Connect Four!</h1>
-    <p>Connect Four is a game for <b>two players</b>. The players alternate turns, dropping a piece of their
+    <h1 id="title">Let's Play Connect Four!</h1>
+    <p id="instructions">Connect Four is a game for <b>two players</b>. The players alternate turns, dropping a piece of
+        their
         color in the top
         of a column. The game is won when a player makes
         <b>four in a row</b> (horizontally, vertically, or diagonally). If the board fills up without a winner, it's a
         tie!
     </p>
+
+    <div id="game">
+        <table id="game-board"></table>
+    </div>
 
     <script src="app.js"></script>
 </body>
