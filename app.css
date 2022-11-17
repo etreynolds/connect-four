@@ -10,10 +10,11 @@ h1 {
     margin: auto;
     font-family: 'Audiowide', cursive;
     color: #1d3557;
-    border: 4px solid #457b9d;
+    border: 5px solid #457b9d;
     border-radius: 15px;
     padding: 20px;
     line-height: 4;
+    box-shadow: 5px 5px 10px #1d3557;
 }
 
 #instructions {
