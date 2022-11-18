@@ -45,6 +45,26 @@ h1 {
     width: 80%;
     height: 80%;
     border-radius: 50%;
+    position: absolute;
+    top: 0;
+}
+
+/* css drop animation code sourced from w3schools.com */
+.w3-animate-top {
+
+    position: relative;
+    animation: animatetop 0.6s
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
 }
 
 /* TODO: make pieces red/blue,  depending on player 1/2 piece */
@@ -71,4 +91,27 @@ h1 {
     width: fit-content;
     position: relative;
     margin: auto;
+}
+
+#player1-color {
+    background-color: #e63946;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+#player2-color {
+    background-color: #457b9d;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.player-colors {
+    background-color: #bce4e6;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

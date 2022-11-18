@@ -102,6 +102,7 @@ function placeInTable(y, x) {
     // TODO: make a div and insert into correct table cell
     const piece = document.createElement("div");
     piece.classList.add("piece");
+    piece.classList.add("w3-animate-top");
     piece.classList.add(`p${currPlayer}`);
 
     const spot = document.getElementById(`${y}-${x}`);
@@ -167,7 +168,7 @@ function checkForWin() {
     }
 
     // TODO: read and understand this code. Add comments to help you.
-
+    // loops through array checking combo of 4 cells in each directional way to win
     for (let y = 0; y < HEIGHT; y++) {
         for (let x = 0; x < WIDTH; x++) {
             const horiz = [[y, x], [y, x + 1], [y, x + 2], [y, x + 3]];
@@ -175,6 +176,7 @@ function checkForWin() {
             const diagDR = [[y, x], [y + 1, x + 1], [y + 2, x + 2], [y + 3, x + 3]];
             const diagDL = [[y, x], [y + 1, x - 1], [y + 2, x - 2], [y + 3, x - 3]];
 
+            // checks to see if any of the ways to win are true
             if (_win(horiz) || _win(vert) || _win(diagDR) || _win(diagDL)) {
                 return true;
             }
